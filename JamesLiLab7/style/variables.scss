@@ -1,0 +1,22 @@
+//typography
+$ulsize: 30px;
+$lisize: round($ulsize*.8);
+$ulfont: Georgia;
+//newvariables
+$lifont: Tahoma;
+$parfont: Courier New;
+$parsize: round($ulsize*.6);
+
+//colors
+$ulcolor: #AFB4C3;
+$licolor: complement($ulcolor);
+    //set color of paragraph
+    $parcolor: #3478ff;
+    $pardiffcolor:#c8c990;
+$licolordiff: invert($ulcolor);
+$bgcolorgrit: invert(grayscale($ulcolor));
+$bgcolorgr: mix($ulcolor, $bgcolorgrit, 20);
+$bgcolorborder: adjust-hue($bgcolorgr, 20);
+
+//screensize
+$screen: 1000px;

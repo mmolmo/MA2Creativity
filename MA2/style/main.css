@@ -1,6 +1,72 @@
-/*imports normalize*/
-@import "normalize.css";
+/*the standard CSS comments will show up on the output
+.css file*/
+.list {
+  /*formats the lsit*/
+}
+.list ul {
+  font-size: 30px;
+  font-family: Georgia;
+  color: #AFB4C3;
+}
+.list ul li {
+  font-size: 24px;
+  font-family: Tahoma;
+}
+.list .standard {
+  color: #c3beaf;
+}
+.list .different {
+  color: #504b3c;
+  background-color: #c3beaf;
+}
 
+.par {
+  /*formats the paragraph below the list*/
+  padding: 30px;
+}
+.par span {
+  font-size: 18px;
+  font-family: Courier New;
+}
+.par .parstandard {
+  color: #3478ff;
+}
+.par .pardiff {
+  color: #c8c990;
+}
+.par .siz {
+  color: #AFB4C3;
+  font-size: 30px;
+}
+.par .col {
+  color: #AFB4C3;
+}
 
+img {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+}
 
-
+/*media query for grid*/
+@media screen and (max-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #5b5c5f;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #5b5c5f;
+  }
+}
+/*formats the grid item*/
+.grid-item {
+  background-color: #464646;
+  border: 1px solid #5b5b5f;
+  margin: 10px;
+}/*# sourceMappingURL=main.css.map */
