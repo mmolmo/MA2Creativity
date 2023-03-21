@@ -6,9 +6,24 @@
 @import "variables";
 @import "mixins";
 
-.list{
+.title{
   //includes the mixin for list format
-  @include liformat;
+  @include titleformat;
+}
+
+h1{
+  font-size: $ulsize;
+ //sets the font for ul (which is then inherited by li)
+ font-family:$ulfont;
+ //sets the color based on your choice
+ color:$ulcolor;
+ text-align: center;
+}
+
+p{
+  font-family: $parfont;
+  font-size: $parfont;
+  color: $parcolor;
 }
 
 .par{
@@ -17,19 +32,9 @@
   //padding for format
   padding: $ulsize;
 }
- 
-img{
-  //
-  max-width: $imgwidth;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 30px;
+.art{
+  max-width: $imgsize;
 }
-
-.titlebar{
-  @include titleformat;
-}
-
 //includes the mixin for grid format
 @include grid;
 /*formats the grid item*/

@@ -26,6 +26,11 @@
   }
 
 }
+
+@mixin titleformat{
+  background-color: aliceblue;
+ 
+}
  
 @mixin parformat{
   /*formats the paragraph below the list*/
@@ -50,18 +55,6 @@
   .col{
     //sets a different color based on ulcolor
     color: $ulcolor;
-  }
-}
-
-@mixin titleformat{
-  .titlebar{
-    margin: 10–00px;
-  }
-  h1{
-    font-size: $headersize;
-    font-family: $headerfont;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
