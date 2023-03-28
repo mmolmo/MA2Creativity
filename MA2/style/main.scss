@@ -6,35 +6,51 @@
 @import "variables";
 @import "mixins";
 
-.title{
-  //includes the mixin for list format
+//color format for header + footer
+.seperate{
   @include titleformat;
+  background-color: $maincolor;
+  display: block;
 }
-
+.divider{
+  padding: $padding;
+  display: block;
+}
+//sets the text properties for header
 h1{
-  font-size: $ulsize;
- //sets the font for ul (which is then inherited by li)
- font-family:$ulfont;
- //sets the color based on your choice
- color:$ulcolor;
- text-align: center;
+  font-size: $headsize;
+  font-family:$headfont;
+  color:$maincolor;
+  text-align: center;
+  display: block
 }
-
-p{
-  font-family: $parfont;
-  font-size: $parfont;
-  color: $parcolor;
+hr{
+  border: $hr solid $maincolor;
 }
-
+ 
+//sets text properties for paragraph text
 .par{
   //includes the mixin for paragraph format below list
   @include parformat;
   //padding for format
-  padding: $ulsize;
+  padding: $padding;
 }
+  p{
+    font-family: $parfont;
+    font-size: $parsize;
+    color: $parcolor;
+    text-align: center
+  }
+  .pardiff{
+    //sets the color based on different color
+    color:$pardiffcolor;
+  }
+
+//width property for image. 
 .art{
   max-width: $imgsize;
 }
+
 //includes the mixin for grid format
 @include grid;
 /*formats the grid item*/

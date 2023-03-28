@@ -1,24 +1,28 @@
 //typography
-$ulsize: 30px;
-$lisize: round($ulsize*.8);
-$ulfont: Georgia;
-//newvariables
-$lifont: Tahoma;
-$parfont: Courier New;
-$parsize: round($ulsize*.6);
+$headfont: Georgia;
+$headsize: 40px;
+$parfont: Garamond;
+$parsize: round($headsize*.6);
 
 //colors
-$ulcolor: #191b22;
-$licolor: complement($ulcolor);
-    //set color of paragraph
-    $parcolor: #3478ff;
-    $pardiffcolor:#c8c990;
-$licolordiff: invert($ulcolor);
-$bgcolorgrit: invert(grayscale($ulcolor));
-$bgcolorgr: mix($ulcolor, $bgcolorgrit, 20);
+$maincolor: #2a1414;
+//set color of paragraph
+$parcolor: $maincolor;
+//alt colors
+$pardiffcolor: invert($maincolor);
+$headcolordiff: invert($maincolor);
+//bg colors for the grid
+$bgcolorgrit: invert($maincolor);
+$bgcolorgr: invert($maincolor);
 $bgcolorborder: adjust-hue($bgcolorgr, 20);
 
+$margin: 30px;
+$padding: 30px;
+
+//size of images
 $imgsize: 100%;
+$hr:round($headsize*.1);
 
 //screensize
+$screensmall: 700px;
 $screen: 1000px;
