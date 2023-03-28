@@ -6,6 +6,12 @@
 @import "variables";
 @import "mixins";
 
+#navbar{
+  background-color: $maincolor;
+  text-align: center;
+  font-size: $headsize;
+  font-family:$headfont;
+}
 //color format for header + footer
 .seperate{
   @include titleformat;
@@ -51,6 +57,15 @@ hr{
   max-width: $imgsize;
 }
 
+#opart{
+  display: none;
+}
+#pattern{
+  display: none;
+}
+#sym{
+  display: none;
+}
 //includes the mixin for grid format
 @include grid;
 /*formats the grid item*/

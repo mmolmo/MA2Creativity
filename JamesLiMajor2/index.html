@@ -15,7 +15,15 @@
 <!--body of document-->
 <body>
   <!--top header section-->
-  <header>
+     <!--nav bar-->
+    <header>
+    <nav id="navbar">
+      <a href="index.html">Home Page</a> |
+      <a href="#opart">OpArt</a> |
+      <a href="#sym">Symmetry</a> |
+      <a href="#references">References</a>
+    </nav>
+    
     <!--title-->
     <container class="seperate">
       <h1 class="headdiff">About this Webpage</h1>
@@ -25,17 +33,26 @@
     </container>
     
   </header>
-   <!--nav bar-->
+
   
   <!--2 column grid containing the content and images-->
   <main class="content">
+    <!-- divider with border -->
+    <section class="divider">
+     <hr>
+    </section>
     <!--title-->
     <section class="divider">
       <h1>Image Gallery</h1>
     </section>
+    <!-- divider with border -->
+    <section class="divider">
+     <hr>
+    </section>
    <!--image gallery-->
    <article class="grid">
     <!--image go here-->
+    <div id="opart"></div>
     <div class="grid-item">
       <img class="art"
       src="images/opart.jpg"
@@ -47,6 +64,7 @@
         This project was created as a demonstration of the concept of basic color theory and associated value as it relates to the colors used.
       </p>
     </div>
+    <div id="pattern"></div>
     <div class="grid-item">
       <img class="art"
       src="images/pattern.jpg"
@@ -58,6 +76,7 @@
         This project was created as a demonstration of the concepts of the visual path, line weight, and repetition of patterns.        
       </p>
     </div>
+    <div id="sym"></div>
     <div class="grid-item">
       <img class="art"
       src="images/symmetry.jpg"
@@ -72,6 +91,7 @@
     </div>
    </article>
   </main>
+  <!-- divider with border -->
   <section class="divider">
     <hr>
   </section>

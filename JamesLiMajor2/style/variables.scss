@@ -13,7 +13,7 @@ $pardiffcolor: invert($maincolor);
 $headcolordiff: invert($maincolor);
 //bg colors for the grid
 $bgcolorgrit: invert($maincolor);
-$bgcolorgr: invert($maincolor);
+$bgcolorgr: transparent;
 $bgcolorborder: adjust-hue($bgcolorgr, 20);
 
 $margin: 30px;
