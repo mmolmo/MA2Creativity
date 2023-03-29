@@ -1,42 +1,51 @@
-
+//visual style formats for the header and footer
 @mixin titleformat{
   padding: $padding;
-  //sets alternate color properties for a different color
+  //sets the alternate color for the header based on the variable
   .headdiff{
     color:$headcolordiff;
 }
 }
+
+//visual style formats for the nav bar
+@mixin navformat{
+  background-color: $parcolor;
+  text-align: center;
+  padding: $parsize; 
+  //visual formats for the link in general
+  a:link {
+    padding: $parsize;
+    font-size: $parsize;
+    font-family:$headfont;
+    color: $pardiffcolor;
+  } 
+  a:visited {
+    color: $pardiffcolor;
+  }
+  //sets alternate colors and background color when hovered
+  a:hover {
+    color: $parcolor;
+    background-color: $pardiffcolor;
+  }
+ 
+}
  
 @mixin parformat{
-  /*formats the paragraph below the list*/
+  /*formats the paragraph text below the list*/
   p{
     font-family: $parfont;
     font-size: $parsize;
     color: $parcolor;
-    text-align: center
-  }
-  //color variations for the span general formatting
-  .parstandard{
-    color: $parcolor;
   }
   .pardiff{
-    //sets the color based on different color
+    //sets the alternate p color based on the variable
     color:$pardiffcolor;
-  }
- //alternate formatting for span text, based on ul element
-  .siz{
-    color: $maincolor;
-    font-size: $headsize;
-  }
-  .col{
-    //sets a different color based on maincolor
-    color: $maincolor;
   }
 }
 
 //grid mixin
 @mixin grid{
-  /*media query for grid*/
+  /*media query for grid to display one column at the smallest screen size (700 px)*/
   @media screen and (max-width: $screensmall){
     .grid {
       display: grid;
@@ -44,26 +53,30 @@
       background-color: $bgcolorgr;
     }
   }
+  /*media query for grid to display two columns at the medium screen size (more than 700 px but less than 1000px)*/
   @media screen and (min-width: $screensmall){
     .grid {
       display: grid;
       grid-template-columns: auto auto;
       background-color: $bgcolorgr;
     }
+    /*this just makes sure the grid elements are positioned where they need to be in order for the pictures to 
+      correspond to the text descriptions*/
     .par2{
       grid-column: 1;
       grid-row: 2;
     }
   }
+  /*media query for grid to display three columns at the largest screen size (1000 px or more)*/
   @media screen and (min-width: $screen){
     .grid {
       display: grid;
       grid-template-columns: auto auto auto;
       background-color: $bgcolorgr;
       }
-
+      /*this just makes sure the grid elements are positioned where they need to be in order for the pictures to 
+      correspond to the text descriptions*/
       .par1{
-        //
         grid-column: 1 ;
         grid-row: 2;
       }

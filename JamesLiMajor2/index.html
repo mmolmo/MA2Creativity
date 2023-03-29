@@ -18,12 +18,10 @@
      <!--nav bar-->
     <header>
     <nav id="navbar">
-      <a href="index.html">Home Page</a> |
-      <a href="#opart">OpArt</a> |
-      <a href="#sym">Symmetry</a> |
-      <a href="#references">References</a>
+      <a href="#opart">OpArt</a>
+      <a href="#pattern">Pattern</a>
+      <a href="#sym">Symmetry</a>
     </nav>
-    
     <!--title-->
     <container class="seperate">
       <h1 class="headdiff">About this Webpage</h1>
@@ -31,10 +29,8 @@
         For this particular assignment, I am proud to showcase a few major projects that I created for an Intro to Design class last semester. As an artist, I take pride in my ability to incorporate various techniques and mediums into my work. This collection features some of my favorite pieces that I created during the course. Each work is unique and employs different fundamental design concepts that best describe my creative vision. They also utilize a variety of mediums, such as cut paper and watercolor. I hope you enjoy the experience of looking through each of these pieces.
       </p>
     </container>
-    
   </header>
 
-  
   <!--2 column grid containing the content and images-->
   <main class="content">
     <!-- divider with border -->
@@ -51,58 +47,82 @@
     </section>
    <!--image gallery-->
    <article class="grid">
-    <!--image go here-->
-    <div id="opart"></div>
+    <!--div container for the image of the opart art piece-->
     <div class="grid-item">
-      <img class="art"
+      <img id="opart"
       src="images/opart.jpg"
-      alt="An image of a Superb Fairywren perching on a wire surrounded by plants.">
+      alt="An image of two drawings in a sketchbook that is arranged vertically. The top one is a pencil drawing of an opticall illusion style piece, depicting a large amount of striped lines coming from the top of the ceiling, eventually hitting a wall and going downwards beyond the floor. The bottom one is a watercolored version of the above drawing and contains the circles which use a primary color palette.">
     </div> 
-    <!-- text element for watercolor -->
+    <!-- text description for the watercolor art piece-->
     <div class="grid-item par1">
-      <p class="par">Medium: Bristol sketchbook, Watercolor.
+      <p class="par">
+        <strong>Op Art Project</strong>
+        <br>
+        <br>
+        Medium: Bristol sketchbook, Watercolor.
+        <br>
+        <br>
         This project was created as a demonstration of the concept of basic color theory and associated value as it relates to the colors used.
       </p>
     </div>
-    <div id="pattern"></div>
+    <!--div container for the image of the pattern art piece-->
     <div class="grid-item">
-      <img class="art"
+      <img id="pattern"
       src="images/pattern.jpg"
-      alt="An image of a Superb Fairywren perching on a wire surrounded by plants.">
+      alt="An image of a busy looking black-and-white ink drawing. The scenery depicts a curved line of paper planes close to the viewer flying into a checkerboard spiral sky. The background consists of some pod-shaped houses with wavy lined walls.">
     </div>
-    <!-- text element for patten -->
+    <!-- text description for the pattern art piece-->
     <div class="grid-item par2">
-      <p class="par">Medium: 14”17 mixed media paper, Faber-Castell Pitt artist pens.
+      <p class="par">
+        <strong>Pattern Project</strong>
+        <br>
+        <br>
+        Medium: 14”17 mixed media paper, Faber-Castell Pitt artist pens, black poster board (for the black background).
+        <br>
+        <br>
         This project was created as a demonstration of the concepts of the visual path, line weight, and repetition of patterns.        
       </p>
     </div>
-    <div id="sym"></div>
+    <!--div container for the image of the symmetry art piece-->
     <div class="grid-item">
-      <img class="art"
+      <img id="sym"
       src="images/symmetry.jpg"
       sizes= 100%
-      alt="An image of a Superb Fairywren perching on a wire surrounded by plants.">
+      alt="An image of a cut paper art piece mounted on a black poster board. It depicts an asymmetrical house with a pointed roof.">
     </div>
-    <!-- text element for papercut -->
+    <!-- text description for the papercut art piece-->
     <div class="grid-item par3">
-      <p class="par">Medium: 14”17 mixed media paper.
-        This project was created as a demonstration of the concept of understanding symmetry in composition as well as the utilization of negative/positive space.         
+      <p class="par">
+        <strong>Symmetry Project</strong>
+        <br>
+        <br>
+        Medium: 14”17 mixed media paper, X-Acto knife, black poster board (for the black background).
+        <br>
+        <br>
+        This project was created as a demonstration of the concept of understanding symmetry in composition as well as the utilization of negative/positive space.
       </p>
     </div>
    </article>
   </main>
+
   <!-- divider with border -->
   <section class="divider">
     <hr>
   </section>
+  
   <!--footer-->
   <footer>
+    <!--container containing a short conclusion-->
     <container class="seperate">
       <h1 class="headdiff">Conclusion.</h1>
       <p class="pardiff">
-        Thank you for taking the time to view some of my artwork from the previous semester. The process of creating each of these pieces was a rewarding experience and has been invaluable to my journey toward art growth. I hope you enjoyed experiencing them as much as I enjoyed creating them.
+        Thank you for taking the time to view some of my artwork from the previous semester. The process of creating each of these pieces was a rewarding experience and has been invaluable to my journey toward art growth. I hope you enjoyed experiencing them as much as I did creating them.
       </p>
-    </container>
+    </container> 
+    <!--navbar that takes the user back to the top of the page when clicked on-->
+    <nav id="footernav">
+      <a href="#navbar">Back to Top </a>
+    </nav>
   </footer>
   
 

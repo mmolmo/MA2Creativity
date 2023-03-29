@@ -5,10 +5,11 @@ $parfont: Garamond;
 $parsize: round($headsize*.6);
 
 //colors
+//set the main color of the header, footer, and paragraph text
 $maincolor: #2a1414;
-//set color of paragraph
+//set color of paragraph text
 $parcolor: $maincolor;
-//alt colors
+//alt colors for head and paragraph text
 $pardiffcolor: invert($maincolor);
 $headcolordiff: invert($maincolor);
 //bg colors for the grid
@@ -16,13 +17,15 @@ $bgcolorgrit: invert($maincolor);
 $bgcolorgr: transparent;
 $bgcolorborder: adjust-hue($bgcolorgr, 20);
 
+//padding and margin values
 $margin: 30px;
 $padding: 30px;
 
 //size of images
 $imgsize: 100%;
+//thickness of the hr
 $hr:round($headsize*.1);
 
-//screensize
+//screensize for media queries
 $screensmall: 700px;
 $screen: 1000px;

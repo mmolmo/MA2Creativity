@@ -6,23 +6,28 @@
 @import "variables";
 @import "mixins";
 
-#navbar{
-  background-color: $maincolor;
-  text-align: center;
-  font-size: $headsize;
-  font-family:$headfont;
+//style formatting for the nav. imports navformat mixin
+nav{
+  @include navformat;
+  display: block;
 }
-//color format for header + footer
+//color format for header + footer. imports titleformat mixin
 .seperate{
   @include titleformat;
   background-color: $maincolor;
   display: block;
 }
+//style formatting for the divider containing the hr.
 .divider{
   padding: $padding;
   display: block;
 }
-//sets the text properties for header
+//style formatting for the hr
+hr{
+  border: $hr solid $maincolor;
+}
+
+//sets the text properties for header. put this here instead of mixins as it was causing issues otherwise.
 h1{
   font-size: $headsize;
   font-family:$headfont;
@@ -30,17 +35,27 @@ h1{
   text-align: center;
   display: block
 }
-hr{
-  border: $hr solid $maincolor;
-}
- 
-//sets text properties for paragraph text
+//sets text properties for paragraph text in the grid specifically
 .par{
   //includes the mixin for paragraph format below list
   @include parformat;
-  //padding for format
-  padding: $padding;
+  //padding and alignment for format
+  padding-left: $padding;
+  padding-right: $padding;
+  text-align: center;
+  //centers the pargraph text vertically at various screen widths
+  @media screen and (min-width: $screensmall){
+    position: absolute;
+    top: 10%;
+    bottom: 15%;
+  }
+  @media screen and (min-width: $screen){
+    position: absolute;
+    top: 25%;
+    bottom: 25%;
+  }
 }
+//style formatting for the paragraph in general
   p{
     font-family: $parfont;
     font-size: $parsize;
@@ -53,19 +68,11 @@ hr{
   }
 
 //width property for image. 
-.art{
+img{
   max-width: $imgsize;
 }
 
-#opart{
-  display: none;
-}
-#pattern{
-  display: none;
-}
-#sym{
-  display: none;
-}
+
 //includes the mixin for grid format
 @include grid;
 /*formats the grid item*/
@@ -73,4 +80,5 @@ hr{
       background-color:$bgcolorgrit;
       border: 1px solid $bgcolorborder;
       margin:10px;
+      position: relative;
     }
